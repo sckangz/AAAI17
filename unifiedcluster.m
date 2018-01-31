@@ -19,7 +19,7 @@ for i=1:200
     
     for ij=1:n
         for ji=1:n
-            all(ji)=norm(F(ij,:)-F(ji,:));
+            all(ji)=(norm(F(ij,:)-F(ji,:)))^2;
         end
         
         H=2*alpha*eye(n)+2*K;
